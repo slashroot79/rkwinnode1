@@ -57,7 +57,7 @@ app.get('/download1', (req, res) => {
 
 app.get('/download2', (req, res) => {
   const CHUNK_SIZE = 1024 * 1024; // 1 MB chunks
-  const filePath = path.join(__dirname, 'downloadfile.pdf');
+  const filePath = path.join(__dirname, 'downloadfile');
   //res.setHeader('Content-Type', 'application/octet-stream');
   res.setHeader('Content-Type', 'application/pdf');
   res.setHeader('Transfer-Encoding', 'chunked');
